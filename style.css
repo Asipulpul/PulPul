@@ -1,0 +1,279 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.5;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+.logo-container {
+    align-items: center;
+    padding: 0 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container a {
+    width: 100%;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 40px;
+    object-position: center ;
+    
+}
+
+.navbar-container {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-container li a {
+        text-decoration: none;
+        color: #0f394c;
+
+}
+
+.navbar-container li a:hover {
+    text-decoration: none;
+    color: #49b5e7;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#home {
+    margin: 0;
+    padding: 170px 13% 60px 13%;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9; 
+}
+
+.hero-text-container {
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-text-container h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #0f394c;
+    text-transform: uppercase;
+    
+}
+
+.hero-text-container h2 {
+    color: #1c698c;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+        
+}
+
+.hero-img-container {
+    width: 50%;
+}
+
+.hero-img-container img {
+    max-width: 100%;
+}
+
+.btn-more {
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    max-width: 100px;
+    padding: 12px 30px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 15px;
+    color: #fff;
+    background: #49b5e7;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-more:hover {
+    background-color: #76c7ed;
+    transform: scale(1.05);
+}
+
+#about {
+    margin: 0;
+    padding: 40px 12% 60px 12%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img-container {
+    background: url(./Asset/about.png) center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+}
+
+.about-text-container {
+    padding: 0 2rem 3rem 2rem;
+    font-size: 16px;
+}
+
+.about-text-container h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f394c;
+    margin-bottom: 15px;
+}
+
+.about-text-container p {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+.icon-box {
+    margin-top: 25px;
+    gap: 20px;
+    
+}
+
+.icon-box .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #d0ecf9;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #49b5e7;
+}
+
+.icon-box .icon:hover {
+    color: #fff;
+    background-color: #49b5e7;
+}
+
+.icon i {
+    font-size: 28px;
+}
+
+.icon-box .title {
+    margin-left: 85px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.icon-box .description {
+    margin-left: 85px;
+    font-size: 14px;
+}
+
+#services {
+    background-color: #f4fbfe;
+    margin: 0;
+    padding: 40px 12% 60px 12%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.services-text-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0f394c;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.services-card-container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container {
+    background-color: #fff;
+    box-shadow:0 10px 29px 0 rgba(68, 88, 144, 0.1) ;
+    padding: 30px;
+    height: 100px;
+    position: relative;
+    flex: 15 0 15%;
+    border-radius: 5%;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+    background-color: #aae4ff;
+}
+
+.text-card-container {
+    position: relative;
+    color: #0f394c;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.card-container .services-icon {
+    position: absolute;
+    bottom: calc(35% - 60px);
+    right: 10px;
+    font-size: 44px;
+}
